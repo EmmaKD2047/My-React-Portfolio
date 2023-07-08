@@ -4,6 +4,5 @@ to = '/index.html'
 status = 200
 
 [build]
-  command = "# no build command"
   functions = "netlify/functions"
   publish = "public"
