@@ -3,5 +3,7 @@ from = '/*'
 to = '/index.html'
 status = 200
 
-[functions]
-directory = 'my_functions'
+[build]
+  command = "# no build command"
+  functions = "netlify/functions"
+  publish = "public"
