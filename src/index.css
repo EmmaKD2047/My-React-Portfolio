@@ -23,30 +23,6 @@ code {
     monospace;
 }
 
-form{
-  @media screen and (max-width: 1110px) {
-      margin: 2rem auto;
-  }
-  @media screen and (max-width: 530px) {
-      width: 90vw;
-  }
-}
-
-input, textarea{
-  padding: 5px;
-  margin-top: 10px;
-  background-color: #171717;
-  border: none;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
-  max-width: 500px;
-}
-
-.projectimage{
-  width: 400px;
-}
-
 .menu{
   position: absolute !important;
   width: 100vw !important;
@@ -86,4 +62,28 @@ input, textarea{
 .overlaylink{
   text-decoration: none !important;
   margin: 2rem !important;
+}
+
+form{
+  @media screen and (max-width: 1110px) {
+      margin: 2rem auto;
+  }
+  @media screen and (max-width: 530px) {
+      width: 90vw;
+  }
+}
+
+input, textarea{
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #171717;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  max-width: 500px;
+}
+
+.projectimage{
+  width: 400px;
 }
