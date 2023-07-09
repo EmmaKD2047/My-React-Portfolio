@@ -40,7 +40,7 @@ code {
       position: absolute !important;
       width: 100vw !important;
       height: 100vh !important;
-      z-index: 1000 !important;
+      z-index: 100000 !important;
   }
 }
 
