@@ -3,7 +3,7 @@ import logo from './../logo.png';
 import { MdClose } from 'react-icons/md';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { useState } from 'react';
-// import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
 
@@ -17,18 +17,18 @@ const Navbar = () => {
     setOpen(false);
   }
 
-  // //animation
-  // const item = {
-  //   exit: {
-  //     opacity: 0,
-  //     height: 0,
-  //     transition: {
-  //       ease: 'easeInOut',
-  //       duration: 0.3,
-  //       delay: .3
-  //     }
-  //   }
-  // }
+  //animation
+  const item = {
+    exit: {
+      opacity: 0,
+      height: 0,
+      transition: {
+        ease: 'easeInOut',
+        duration: 0.3,
+        delay: .3
+      }
+    }
+  }
 
   return (
         <>
@@ -54,9 +54,16 @@ const Navbar = () => {
               <HiOutlineMenuAlt3 style={{ color: 'white', fontSize: '30px' }} onClick={isOpen}/>
             </Icon>
           </Nav>
+          <AnimatePresence>
             {
               open && (
-                <div className='menu'>
+                <motion.div className='menu'
+                variants={item}
+                initial={{height: 0, opacity: 0}}
+                animate={{height: '100vh', opacity: 1}}
+                transition={{duration: .3}}
+                exit='exit'
+                >
                   <div className='btn-close' onClick={closeMenu}><MdClose /></div>
                   <a href='/' rel='noreferrer' className='overlaylink'>
                     <p>Home</p>
@@ -70,9 +77,10 @@ const Navbar = () => {
                   <a href='contact' rel='noreferrer' className='overlaylink'>
                     <p>Contact</p>
                   </a>
-                </div>
+                </motion.div>
               )
             }
+          </AnimatePresence>
         </>
   )
 }
