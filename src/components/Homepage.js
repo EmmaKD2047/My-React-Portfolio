@@ -12,10 +12,10 @@ const Homepage = () => {
     <Background>
       <Intro>
         <Name>
-          <strong><h1 style={{ padding: '1rem', fontSize: 'calc(2.5rem + 1vw)'}}>I AM EMMANUEL KADIRI</h1></strong>
+          <strong><h1 style={{ padding: '1rem', fontSize: 'calc(2rem + 1vw)'}}>I AM EMMANUEL KADIRI</h1></strong>
         </Name>
         <Job>
-          <Typewriter style={{ width: '80%', textAlign: 'center' }}
+          <Typewriter style={{ width: '80%', textAlign: 'center', fontSize: 'calc(.8rem + 1vw)' }}
           onInit = {(typewriter) => {
             typewriter.typeString('FRONTEND DEVELOPER AND AFFILIATE MARKETER').pauseFor(1000).deleteAll().typeString('NICE TO  MEET YOU ; )').start();
           }}/>
