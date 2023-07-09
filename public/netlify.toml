@@ -4,4 +4,4 @@ to = '/index.html'
 status = 200
 
 [build]
-  functions = "my_functions"
+  functions = "build/static/js"
