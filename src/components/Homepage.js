@@ -17,7 +17,7 @@ const Homepage = () => {
         <Job>
           <Typewriter style={{ width: '80%', textAlign: 'center', fontSize: 'calc(.8rem + 1vw)' }}
           onInit = {(typewriter) => {
-            typewriter.typeString('FRONTEND DEVELOPER AND AFFILIATE MARKETER').pauseFor(1000).deleteAll().typeString('NICE TO  MEET YOU ; )').start();
+            typewriter.typeString('FRONTEND DEVELOPER').pauseFor(1000).deleteAll().typeString('NICE TO  MEET YOU ; )').start();
           }}/>
         </Job>
       </Intro>
