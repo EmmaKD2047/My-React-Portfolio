@@ -10,7 +10,7 @@ export const ProjectLinks = styled(Link)`
 `
 
 export const Projects = styled.div`
-    width: 100vw;
+    width: 70vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
