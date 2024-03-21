@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     justify-content: space-between;
     position: absolute;
     z-index: 100;
-    width: 100vw;
+    width: 100%;
 
     @media (max-width: 580px){
         overflow: hidden;
