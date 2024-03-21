@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     justify-content: space-between;
     position: absolute;
     z-index: 100;
-    width: 100%;
+    width: 100vw;
 
     @media (max-width: 580px){
         overflow: hidden;
@@ -47,7 +47,7 @@ export const Home = styled(Link)`
 
 export const NavLinks = styled.div`
     height: 100%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 
